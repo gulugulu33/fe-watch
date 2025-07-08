@@ -1,0 +1,31 @@
+{
+  "name": "@frontend-watch-dog/web-sdk",
+  "version": "0.0.1",
+  "description": "",
+  "module": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
+  "scripts": {
+    "dev": "father dev",
+    "build": "father build",
+    "build:deps": "father prebundle",
+    "prepublishOnly": "father doctor && npm run build"
+  },
+  "keywords": [],
+  "authors": [],
+  "license": "MIT",
+  "files": [
+    "dist",
+    "compiled"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@hulljs/eslint-config-hull-app": "^0.1.0",
+    "father": "^4.3.8"
+  },
+  "dependencies": {
+    "web-vitals": "^3.5.1"
+  },
+  "gitHead": "52b411952157c65db22667c0e72d59e0ee1cfa2c"
+}
